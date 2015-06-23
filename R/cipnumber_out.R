@@ -13,6 +13,7 @@ cip_number_check <- function(cipnumber){
   
 }
 
+
 cipnumber_out<- function(file,cip_number,sheetname="mysheet"){
   
   file <- as.character(file)
@@ -58,6 +59,7 @@ cipnumber_out<- function(file,cip_number,sheetname="mysheet"){
   xlsx::saveWorkbook(wb, file)
   #shell.exec(file)
 }
+
 
 #   file <- "D:\\Users\\obenites\\Desktop\\PTDT201409_STRSIGUAS_VHT.xls"
 #   cip_number <- "INSTN"

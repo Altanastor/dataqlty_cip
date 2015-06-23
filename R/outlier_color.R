@@ -2,6 +2,7 @@
 #install.packages("stringr")
 #library(xlsx)
 #library(stringr)
+#run with data collector
 outlier_color <- function(file=fp,trait,sheetname="Fieldbook"){
   
   sheetname <- as.character(sheetname)
