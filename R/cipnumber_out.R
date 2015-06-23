@@ -1,3 +1,8 @@
+#install.packages("xlsx")
+#install.packages("stringr")
+#library(xlsx)
+#library(stringr)
+
 cip_number_check <- function(cipnumber){
   
   pattern <- "^(CIP)[0-9]{6}(\\.([0-9]{1,3}))?$"

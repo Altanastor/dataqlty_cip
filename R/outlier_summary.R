@@ -1,3 +1,8 @@
+#install.packages("xlsx")
+#install.packages("stringr")
+#library(xlsx)
+#library(stringr)
+
 outlier_summary <- function(file=fp,trait,sheetname="Summary by clone"){
   
   sheetname <- as.character(sheetname)
@@ -18,9 +23,7 @@ outlier_summary <- function(file=fp,trait,sheetname="Summary by clone"){
   
   trait_mean <- trait_mean[trait_mean %in% names(data)]
   trait_sd <- trait_sd[trait_sd %in% names(data)]
-  
-  
-  
+   
   if(has.data(col_mean) & has.data(col_sd)){
     if(is.numeric(col_mean) & is.numeric(col_sd)){
       #lwr = as.numeric(dict[dict$ABBR==trait,"LOWER"])
@@ -117,7 +120,6 @@ outlier_summary <- function(file=fp,trait,sheetname="Summary by clone"){
 #     outlier_summary(fp,trait_names[i],"Summary by treatment")   
 #   }    
 # }  
-
 
 #Summary by clone
 #NNoMTP  
