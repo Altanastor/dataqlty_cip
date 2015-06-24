@@ -2,6 +2,11 @@
 #install.packages("stringr")
 #library(xlsx)
 #library(stringr)
+has.data <-function(acol){
+  if(length(acol)<1) return(FALSE)
+  res = length(acol)!=length(which(is.na(acol)))
+  res
+}
 
 outlier_summary <- function(file=fp,trait,sheetname="Summary by clone"){
   

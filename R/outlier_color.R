@@ -3,6 +3,13 @@
 #library(xlsx)
 #library(stringr)
 #run with data collector
+
+has.data <-function(acol){
+  if(length(acol)<1) return(FALSE)
+  res = length(acol)!=length(which(is.na(acol)))
+  res
+}
+
 outlier_color <- function(file=fp,trait,sheetname="Fieldbook"){
   
   sheetname <- as.character(sheetname)
