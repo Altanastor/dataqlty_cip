@@ -18,7 +18,6 @@ cip_number_check <- function(cipnumber){
   
 }
 
-
 cipnumber_out<- function(file,cip_number,sheetname="mysheet"){
   
   file <- as.character(file)
